@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+</head>
+<body>
+    <!--这些属性要写在表格标签table里面去-->
+  <table align="center" border="1" cellpadding="20" cellspacing="0" width="500">
+      <tr><th>姓名1</th> <th>性别1</th> <th>年龄1</th></tr>
+      <tr><td>姓名2</td> <td>性别2</td> <td>年龄2</td></tr>
+      <tr><td>姓名3</td> <td>性别3</td> <td>年龄3</td></tr>   
+      <tr><td>姓名4</td> <td>性别4</td> <td>年龄4</td></tr>
+      <tr><td>姓名5</td> <td>性别5</td> <td>年龄5</td></tr>      
+  </table><br>
+  <!-- 案例：电视剧排行 -->
+  <table align="center" border="1" cellpadding="20" cellspacing="0" width="1000">
+    <thead>
+      <tr>
+          <th>排名</th> 
+          <th>关键词</th> 
+          <th>趋势</th> 
+          <th>进入搜索</th> 
+          <th>最近七日</th> 
+          <th>相关链接</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>鬼吹灯</td>
+            <td><img src="down.jpg" ></td>
+            <td>456</td>
+            <td>123</td>
+            <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>西游记</td>
+            <td><img src="down.jpg"></td>
+            <td>456</td>
+            <td>123</td>
+            <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>痕迹</td>
+            <td><img src="down.jpg"></td>
+            <td>456</td>
+            <td>123</td>
+            <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>传闻中的陈芊芊</td>
+            <td><img src="down.jpg"></td>
+            <td>456</td>
+            <td>123</td>
+            <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a> </td>
+        </tr>
+    </tbody>
+  </table><br>
+  <!-- 合并单元格 -->
+  <table align="center" border="1" cellpadding="20" cellspacing="0" width="500">
+    <tr>
+        <td></td>
+        <td colspan="2"></td>
+    </tr>
+    <tr>
+        <td rowspan="3"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>        
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+  </table>
+  
+</body>
+</html>

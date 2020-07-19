@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+    <form action="xxx.php" method="POST">
+        <!-- text 文本框 可以输入任何文字 -->
+        用户名：<input type="text" name="username" value="请输入用户名" ><br>
+        <!-- password 密码框 用户看不见输入的密码 -->
+        密码：<input type="password" name="password" maxlength="6"><br>
+        <!-- checkbox 复选框/radio单选按钮 -->
+        性别：男<input type="radio" name="sex" checked="checked">  女<input type="radio" name="sex"><br>
+        爱好：吃饭<input type="checkbox" name="hobby"> 睡觉<input type="checkbox" name="hobby"> 打豆豆<input type="checkbox" name="hobby"><br>
+        <input type="submit" value="注册">
+        <input type="reset" value="重置">
+        <!-- 普通按钮 button -->
+        <input type="button" value="获取验证码"><br>
+        上传文件：<input type="file"><br>
+        <!-- label 选中面积更大 -->
+        <label for="1">用户名</label>
+        <input type="text" id="1">
+        <input type="radio" id="nan" name="sex"><label for="nan">男</label>
+        <input type="radio" id="nv" name="sex"><label for="nv">女</label>
+        <br>
+        <!-- 下拉控件 -->
+        籍贯：<select>
+            <option selected="selected">湖北</option>
+            <option>山东</option>
+            <option>北京</option>
+            <option>湖南</option>
+            <option>陕西</option>
+        </select>     
+    </form>
+</body>
+</html>
