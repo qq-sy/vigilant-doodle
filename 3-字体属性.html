@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体属性</title>
+    <style>
+        h2{
+          font-family: '微软雅黑';
+        /* 文字风格 */
+          font-style: italic;
+        }
+        p{
+           font-family: Arial;
+        }
+        /* 字体大小（标题标签需要单独指定大小）*/
+        body{
+            font-size: 16px;
+        }
+        /* 字体粗细font-weight */
+        .bold{
+            /* font-weight: bold;(400和normal等价，700和bold等价)*/
+            font-weight: 700;
+        }
+        em{
+            /* 将倾斜的文字变正 */
+            font-style: normal;
+        }
+        /* 复合属性 */
+        div{
+            /* font-style: italic;
+            font-size: 16px;
+            font-family: fantasy;
+            font-weight: 700; */
+            /* 复合属性简写方式（顺序不能变）：
+            font:font-style font-weight font-size/line-height font-family; */
+            font:italic 700 16px fantasy;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>综合学习</h2>
+    <p>学习HTML</p>
+    <p>学习CSS</p>
+    <p>学习JavaScript</p>
+    <p>学习jQuery</p>
+    <p class="bold">学习Bootstrap</p>
+    <em>学习PHP</em>
+    <div>学习Vue.js</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础选择器</title>
+    <style>
+        /* 标签选择器（用标签名） */
+        /* 类选择器（用.） */
+        .red{
+            width: 100px;
+            height: 100px;
+            /* 背景颜色 */
+            background-color: red;
+        }
+        .green{
+            width: 100px;
+            height: 100px;
+            background-color: seagreen;
+        }
+        .font35{
+            font-size: 35px;
+        }
+        .yellow{
+            color: yellow;
+        }
+        /* 多类名修改起来方便（把相同标签元素定义成一个类名）
+        例如：
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+             background-color: seagreen;
+        } */
+
+        /* id选择器（用#，只能使用一次） */
+        #pink{
+            color: pink;
+        }
+        /* 通配符选择器（用*）
+        *{
+            color: blue;
+        } 所有都会改成蓝色
+        */
+    </style>
+</head>
+<body>
+    <!-- 利用三个选择器类画三个盒子 -->
+    <div class="red">red</div>
+    <div class="green">green</div>
+    <div class="red">red</div>
+    <!-- 多类名 -->
+    <div class="yellow font35">武汉纺织大学</div>
+    <!-- =========================== -->
+    <div id="pink">武汉纺织大学阳光校区</div>
+</body>
+</html>
