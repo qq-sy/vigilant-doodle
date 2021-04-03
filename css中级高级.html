@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#example1 {
+  background-image: url("./1/bg1.png"), url("./1/bg.jpg");
+  background-position:right bottom, left top ;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+
+img {
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+
+.newspaper {
+  column-count: 6;
+  column-gap: 40px;
+  column-rule-style: solid;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #999;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #333;
+}
+
+.active {
+  background-color: #c2aac1;
+}
+
+h1.hidden {
+  visibility: hidden;
+}
+
+p.test1 {
+  width: 140px; 
+  border: 1px solid #000000;
+  word-break: keep-all;
+}
+
+p.test2 {
+  width: 140px; 
+  border: 1px solid #000000;
+  word-break: break-all;
+}
+
+</style>
+</head>
+<body>
+<div id="example1">
+<ul>
+  <li><a class="active" href="#home">主页</a></li>
+  <li><a href="#news">查找</a></li>
+  <li><a href="#contact">帮助</a></li>
+  <li><a href="#about">关于</a></li>
+</ul>
+	<div class="newspaper">
+	<img src="./1/tulip.jpg" alt="Tulip" width="160" height="160">
+  <p class="test1">CSS高级教程里面 用到了文本效果(换行规则) 、背景(花和背景花纹)、分列和图像样式</p>
+	<img src="./1/tulip2.jpg" alt="Tulip" width="160" height="160">
+  <p class="test2">中级教程里面用到了不透明度、水平导航栏和Display(隐藏标题)</p>
+	<img src="./1/tulip3.jpg" alt="Flower" width="160" height="160">   
+  <h1 class="hidden">这是隐藏的标题</h1>
+	</div>	
+</div>
+
+</body>
+</html>
